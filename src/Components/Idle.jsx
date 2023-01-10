@@ -4,7 +4,7 @@ import "./style/idle.css";
 export default function Idle() {
   return (
     <div>
-      <div class="wobbling-10"></div>
+      <div className="wobbling-10"></div>
     </div>
   );
 }
