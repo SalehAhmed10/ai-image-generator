@@ -1,0 +1,271 @@
+/* 
+
+.hero--video {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.hero video {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.hero .search {
+  position: relative;
+  vertical-align: middle;
+  z-index: 2;
+}
+
+.hero .search input {
+  width: 100%;
+  height: 76px;
+  line-height: 76px;
+  border: 1px solid #111;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 27px;
+  padding: 5px 5px 5px 47px;
+  color: #fff;
+  position: relative;
+  border-radius: 0;
+}
+
+.hero .search button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  color: #fff;
+  background: #88687b;
+  font-size: 27px;
+  height: 65px;
+  line-height: 65px;
+  width: 68px;
+  padding: 0;
+  border: 0;
+}
+
+
+
+.menu-hamburger {
+  bottom: calc(50% - 10px);
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-hamburger span {
+  width: 30px;
+  height: 4px;
+  display: block;
+  background: #fafafa;
+  margin-bottom: 4px;
+}
+
+.menu-hamburger span:last-of-type {
+  margin-bottom: 0;
+}
+
+nav {
+  background: #010101;
+  z-index: 3;
+}
+
+nav .navbar-nav li.navbar-item {
+  line-height: 110px;
+  margin-left: -5px;
+}
+
+nav .navbar-nav li.navbar-item a {
+  padding: 0 20px;
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+  nav.h-navbar {
+    max-height: 90px;
+  }
+
+  .hero .search input {
+    background: rgba(0, 0, 0, 0.92);
+    font-size: 20px;
+    padding: 5px 5px 5px 10px;
+    height: 60px;
+  }
+
+  .hero .search button {
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav .navbar-nav li.navbar-item a {
+    padding: 0 10px;
+  }
+
+  .row {
+    width: 100%;
+  }
+} */
+
+.hero-main {
+  height: 30vh;
+  background-color: rgb(238, 216, 209);
+}
+
+.hero-serch-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-serch-main h1 {
+  font-size: 2em;
+}
+
+.search-input {
+  width: 55%;
+}
+
+.search-input input {
+  width: 85%;
+  height: 70px;
+  /* min-height: 70px; */
+  /* line-height: 76px; */
+  border: 1px solid #111;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  padding: 5px 5px 5px 47px;
+  color: #fff;
+
+  border-radius: 0;
+}
+
+.search-input .input:focus {
+  border: 1px solid #111;
+  outline: #111;
+}
+
+.search-input button {
+  width: 15%;
+  color: #fff;
+  background: #88687b;
+  border: 1px solid #111;
+  font-size: 20px;
+  height: 71px;
+  cursor: pointer;
+  padding: 0px 0px 0px 0px;
+}
+
+.search-input button:hover {
+  background-color: whitesmoke;
+}
+.download-btn {
+  padding: 10px 20px;
+  border: 1px solid salmon;
+  margin: 25px 0 0 0;
+  background-color: rgb(255, 218, 203);
+}
+
+.download-btn:hover {
+  padding: 10px 20px;
+  border: 1px solid salmon;
+  margin: 25px 0 0 0;
+  background-color: transparent;
+}
+.download-btn a {
+  text-decoration: none;
+}
+
+.result-main {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+.idle {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-image img {
+  width: 1024px;
+  max-width: 1300px;
+  height: 1024;
+  max-height: 1300px;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .search-input {
+    width: 85%;
+  }
+  .search-input input {
+    width: 80%;
+    height: 50px;
+    /* line-height: 76px; */
+    border: 1px solid #111;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    padding: 10px 10px;
+    color: #fff;
+
+    border-radius: 0;
+  }
+
+  .search-input button {
+    height: 50px;
+    width: 20%;
+    color: #fff;
+    background: #88687b;
+    border: 1px solid #111;
+    font-size: 20px;
+
+    cursor: pointer;
+  }
+
+  .idle {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+  }
+  .result-image img {
+    width: 350px;
+    max-width: 400px;
+  }
+
+  .result-main {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+  .result-image img {
+    width: 500px;
+  }
+}
